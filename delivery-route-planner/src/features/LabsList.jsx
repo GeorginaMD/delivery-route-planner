@@ -1,0 +1,1 @@
+import "./LabsList.css"

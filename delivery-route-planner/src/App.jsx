@@ -1,16 +1,33 @@
-import './App.css'
-import { createBrowserRouter } from "react-router";
-import { RouterProvider } from "react-router/dom";
+import "./App.css"
+import "./styles/reset.css"
+import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
 
-function App() {
+function Layout() {
+  return (
+    <div className="layout">
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
+  )
+}
 
-  const router = createBrowserRouter([
+const router = createBrowserRouter([
   {
     path: "/",
-    element: <div>Hello World</div>,
+    element: <Layout />,
+    children: [
+      {
+        index: true,
+        
+      }
+    ]
   },
 ]);
 
+function App() {
   return (
     <>
       <RouterProvider router={router} />
