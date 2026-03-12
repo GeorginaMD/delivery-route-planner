@@ -18,9 +18,12 @@ html {
 }
 
 body {
-    -webkit-font-smoothing: antialiased;
-    min-height: 100dvh;
-    line-height: 1.5;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100dvh;
+  line-height: 1.5;
 }
 
 img, picture, canvas, svg {
