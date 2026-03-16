@@ -1,12 +1,16 @@
 import "./App.css"
 import "./styles/reset.css"
 import { createBrowserRouter, RouterProvider, Outlet } from "react-router";
+import  Navbar  from "./sections/Navbar";
+import RoutePanel from "./pages/RoutePanel";
+import Footer from "./sections/Footer";
+
 
 function Layout() {
   return (
     <div className="layout">
       <Navbar />
-      <main>
+      <main className="main">
         <Outlet />
       </main>
       <Footer />
@@ -21,7 +25,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        
+        element: <RoutePanel />
       }
     ]
   },
