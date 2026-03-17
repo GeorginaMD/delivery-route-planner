@@ -1,23 +1,10 @@
-.route-panel {
-    border: 1px solid red;
+.main-panel {
+    border: 3px solid red;
     display: flex;
     flex-direction: column;
     height: 100%;
 }
 
-.labs{
-    border: 1px solid green;
-    height: 30px;
-}
 
-.labs-list {
-    border: 1px solid orange;
-    flex: 1;
-    overflow-y: auto;
-}
 
-.route-list {
-    border: 1px solid purple;
-    flex: 2;
-    overflow-y: auto;
-}
+
