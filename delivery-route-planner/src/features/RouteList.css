@@ -1,0 +1,5 @@
+.route-panel {
+    border: 1px solid purple;
+    flex: 2;
+    overflow-y: auto;
+}

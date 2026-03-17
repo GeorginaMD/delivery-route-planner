@@ -1,0 +1,5 @@
+.labs-panel {
+    border: 1px solid orange;
+    flex: 1;
+    overflow-y: auto;
+}
