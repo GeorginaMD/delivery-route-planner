@@ -1,21 +1,21 @@
 import "./Toolbar.css"
+import IconBtn from "../components/IconBtn";
 
 function Toolbar() {
     return (
         <div className="toolbar-panel">
-            <span>🗑️</span>
-            <span>🚨</span>
-            <span>🌞</span>
-            <span>🌚</span>
-            <span>⏰</span>
+            <IconBtn icon="🚨"/>
+            <IconBtn icon="🌞"/>
+            <IconBtn icon="🌚"/>
+            <IconBtn icon=".  R  ."/>
+            <IconBtn icon="..de.."/>
+            <IconBtn icon=".  D  ."/>
+            <IconBtn icon="..en.."/>
+            <IconBtn icon=" abre -&gt; "/>
+            <IconBtn icon="✔️"/>
+            <IconBtn icon="⏰"/>
             <input type="time" />
-            <span>🟥</span>
-            <span>🟩</span>
-            <span> R </span>
-            <span> D </span>
-            <span>..de..</span>
-            <span>..en..</span>
-            <span> abre -&gt; </span>
+            <IconBtn icon="🗑️"/>
         </div>
     )
 }
