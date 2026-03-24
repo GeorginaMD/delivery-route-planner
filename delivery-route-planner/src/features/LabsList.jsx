@@ -13,7 +13,7 @@ function LabsList() {
                 </header>
                 <ul className="labs-list">
                     {labs.map(lab => (
-                        <LocationItem lab={lab} />
+                        <LocationItem key={lab.id} lab={lab} />
                     ))}
                 </ul>
             </section>

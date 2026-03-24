@@ -8,14 +8,7 @@ function RouteList() {
                     <h3>Ruta</h3>
                 </header>
                 <ul className="route-list">
-                    <LocationItem />
-                    <LocationItem />
-                    <LocationItem />
-                    <LocationItem />
-                    <LocationItem />
-                    <LocationItem />
-                    <LocationItem />
-                    <LocationItem />
+                
                 </ul>
             </section>
     )
