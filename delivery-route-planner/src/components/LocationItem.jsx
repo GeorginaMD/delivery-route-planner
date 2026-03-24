@@ -1,10 +1,10 @@
 import "./LocationItem.css"
 
-function LocationItem() {
+function LocationItem({ lab }) {
+    console.log(lab);
+    /* if (!lab) return null; */
     return (
-        <div>
-            <li className="location-item"> Just a placeholder for a lab/clinic </li>
-        </div>
+        <li className="location-item">{lab.name}</li>
     )
 }
 

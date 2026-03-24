@@ -8,3 +8,8 @@
 .worker-btn {
     border-radius: 10px;
 }
+
+.worker-btn.active {
+    background: green;
+    color: white;
+}
