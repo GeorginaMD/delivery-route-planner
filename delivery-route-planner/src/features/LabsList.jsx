@@ -4,7 +4,7 @@ import { useRoute } from "../context/RouteContext";
 
 function LabsList() {
 
-    const { labs } = useRoute();
+    const { labs, setSelectedLabId  } = useRoute();
 
     return (
             <section className="labs-panel">
@@ -12,12 +12,14 @@ function LabsList() {
                     <h3>Laboratorios</h3>
                 </header>
                 <ul className="labs-list">
+
                     {labs.map(lab => (
-                        <LocationItem key={lab.id} lab={lab} />
+                        <LocationItem key={lab.id} lab={lab} onClick={() => setSelectedLabId(lab.id)} /> 
+                        
                     ))}
                 </ul>
             </section>
     )
 }
 
-export default LabsList;
+export default LabsList;                    
