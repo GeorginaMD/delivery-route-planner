@@ -42,7 +42,16 @@ const clinics = [
     { id: "c17", name: "clinica 17", labId: "lab11" },
     { id: "c18", name: "clinica 18", labId: "lab11" },
     { id: "c19", name: "clinica 19", labId: "lab11" },
-    { id: "c20", name: "clinica 20", labId: "lab11" }
+    { id: "c20", name: "clinica 20", labId: "lab11" },
+    { id: "c21", name: "clinica 04", labId: "lab01" },
+    { id: "c22", name: "clinica 05", labId: "lab01" },
+    { id: "c23", name: "clinica 06", labId: "lab01" },
+    { id: "c24", name: "clinica 07", labId: "lab01" },
+    { id: "c25", name: "clinica 08", labId: "lab01" },
+    { id: "c26", name: "clinica 09", labId: "lab01" },
+    { id: "c27", name: "clinica 10", labId: "lab01" },
+    { id: "c28", name: "clinica 11", labId: "lab01" },
+    { id: "c29", name: "clinica 12", labId: "lab01" },
 ]
 
 export function RouteProvider({ children }) {
