@@ -6,10 +6,13 @@ import Toolbar from "../features/Toolbar";
 import { useRoute } from "../context/RouteContext";
 
 function RoutePanel() {
-    const { selectedLabId } = useRoute();
+    const { labs, selectedLabId, setSelectedLabId } = useRoute();
+    
+    const selectedLab = labs.find(lab => lab.id === selectedLabId);
+
     return (
         <div className="main-panel">
-            {selectedLabId ? <ClinicsList /> : <LabsList />}
+            {selectedLabId ? <ClinicsList onBack={() => setSelectedLabId(null)} labName={selectedLab?.name}/> : <LabsList />}
             <RouteList />
             <Toolbar />
         </div>

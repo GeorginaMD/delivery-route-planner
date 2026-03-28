@@ -1,10 +1,10 @@
 import "./LocationItem.css"
 import React from "react";
 
-function LocationItem({ lab, onClick }) {
-    if (!lab) return <li className="location-item">No data</li>;
+function LocationItem({ item, onClick }) {
+    if (!item) return <li className="location-item">No data</li>;
     return (
-        <li className="location-item" onClick={onClick} >{lab.name}</li>
+        <li className="location-item" onClick={onClick} >{item.name}</li>
     )
 }
 export default LocationItem;

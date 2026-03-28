@@ -6,5 +6,13 @@
 }
 
 .clinics-header {
+    display: flex;
+    flex-direction: row;
     text-align: center;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.clinics-header button {
+  cursor: pointer;
 }
